@@ -50,6 +50,6 @@ while flag == False:
 
     except ValueError:
         print()
-        print('Input error! Enter only integers!', )
+        print('Input error! Enter only integers!')
         print('/////////////////////////////////')
         print()

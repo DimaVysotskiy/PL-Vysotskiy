@@ -37,6 +37,10 @@ while flag == False:
         flag = True
         print('End')
 
+        #if enter only one row
+        if n == 1:
+            print('Enter more than one row. This operation meaningless.')
+
     except ValueError:
         print('Input error! Enter only integers!', )
         print('/////////////////////////////////')

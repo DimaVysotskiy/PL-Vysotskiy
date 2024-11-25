@@ -7,7 +7,7 @@ import requests
 
 def request(url, username):
     get = requests.get(url=url).json()
-    if username == 'node':#там японские сиволы в файл не копируются
+    if username == 'node':#там японские символы в файл не копируются
         filter_get = {
             'company': f'-----',
             'created_at': f'{get['created_at']}',

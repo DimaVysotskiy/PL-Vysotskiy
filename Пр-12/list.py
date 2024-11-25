@@ -25,6 +25,7 @@ for i in range(len(soup_name)):
 
 
 
+
 #список с именами на github
 soup_reference = soup.find_all('a')
 
@@ -45,5 +46,8 @@ for i in range(100):
     final_dict[names_of_projects[i]] = names_on_git[i]
 
 
+
+
+#write to file
 with open('list_txt', '+w') as file:
     file.write(f'{str(final_dict)}\n{str(names_on_git)}')

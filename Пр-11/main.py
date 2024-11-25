@@ -5,6 +5,7 @@ from tkinter.ttk import Combobox
 
 
 
+#for task 1
 def calculate():
     first_digit = e.get()
     second_digit = e1.get()
@@ -35,6 +36,10 @@ def calculate():
         l_answer.configure(text='Error!!!')
         print(ex)
 
+
+
+
+#for task 2
 def click():
     a = sel.get()
     if a == 1:
@@ -44,11 +49,18 @@ def click():
     elif a == 3:
         messagebox.showinfo('Your choice', f'Checkbox №{a}', parent=window)
 
+
+
+
+#for task 3
 def open_file():
     f = filedialog.askopenfilename(defaultextension='txt')
     with open(f, '+r') as file:
         a = file.read()
         text.insert(1.0, a)
+
+
+
 
 def save():
     f = filedialog.askopenfilename(defaultextension='txt')
@@ -68,6 +80,7 @@ window.resizable(height=False, width=False)
 
 
 
+
 #for frame
 tab_control = ttk.Notebook(window)
 task1 = ttk.Frame(tab_control)
@@ -77,6 +90,7 @@ tab_control.add(task1, text='Task1')
 tab_control.add(task2, text='Task2')
 tab_control.add(task3, text='Task3')
 tab_control.pack(fill='both', expand=True)
+
 
 
 
